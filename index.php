@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head >
     <?php include "./src/html/parts/header.html" ?>
     <link href="./src/scss/css/style.css" rel="stylesheet"/> 
 
@@ -11,11 +11,12 @@
 
 </head>
 
-    <body>
+    <body onload="getProducts()">
         <?php include "./src/html/content.html" ?>
 
         <?php include "./src/html/parts/footer.html" ?>
     </body>
 
+    <script type="text/javascript" src="./src/js/productController.js"></script>
     <script type="text/javascript" src="./src/js/validation.js"></script>
 </html>
