@@ -10,9 +10,12 @@
 	<title>Linx Challenge</title>
 
 </head>
+
     <body>
         <?php include "./src/html/content.html" ?>
 
         <?php include "./src/html/parts/footer.html" ?>
     </body>
+
+    <script type="text/javascript" src="./src/js/validation.js"></script>
 </html>

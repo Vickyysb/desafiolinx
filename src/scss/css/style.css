@@ -113,6 +113,10 @@ body {
       .container .home-desktop .form input {
         border: 1px solid #707070;
         height: 30px; }
+      .container .home-desktop .form input::-webkit-outer-spin-button,
+      .container .home-desktop .form input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
       .container .home-desktop .form label {
         padding-bottom: 7px; }
       .container .home-desktop .form .input {

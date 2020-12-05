@@ -33,6 +33,12 @@ $background-default : #707070;
                 border: 1px solid $background-default;
                 height: 30px;
             }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+
             label {
                 padding-bottom: 7px;
             }
