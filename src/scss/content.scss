@@ -1,0 +1,374 @@
+body{ margin: 0; width: 100%;}
+
+$color-default : #888888;
+$background-default : #707070;
+
+.bold { font-weight: bold;}
+
+.container {
+    padding: 20px 14.6%;
+    font-family: sans-serif;
+    .home-desktop {
+        width: 100%;
+        display: flex;
+        color: $color-default;
+        margin-bottom: 79px;
+        .description-box {
+            padding-right: 7%;
+            width: 65%;
+            .title {
+                margin: 0 0 30px 0;
+                font-size: 20px;
+            }
+            .description {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    
+        .form {
+            width: 35%;
+            font-size: 12px;
+            input {
+                border: 1px solid $background-default;
+                height: 30px;
+            }
+            label {
+                padding-bottom: 7px;
+            }
+            .input {
+                margin-top: 7px;
+                display: grid;
+                margin-bottom: 20px;
+            }
+            .genre {
+                margin-bottom: 23px;
+                display: flex;
+                span {
+                    align-items: center;
+                    display: flex;
+                    margin-right: 8%;
+                    input {
+                        margin: 0 5% 0 0;
+                    }
+                }
+            }
+    
+            .send-button {
+                font-size: 16px;
+                color: $color-default;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 1px solid $background-default;
+                border-radius: 4px;
+                width: 100%;
+                height: 39px;
+            }
+        }
+    }
+    .home-tablet {
+        color: $color-default;
+        .title {
+            font-size: 20px;
+        }
+        .description {
+            font-size: 12px;
+            margin-bottom: 40px;
+        }
+    }
+    
+    .selection {
+        .title-box-desktop {
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            color: $color-default;
+            margin-bottom: 50px;
+            align-items: center;
+
+            .title {
+                text-align: center;
+                width: 20%;
+            }
+
+            .line {
+                background: $background-default;
+                width: 40%;
+                height: 1px;
+            }
+        }
+
+        .card-box {
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .card {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 21%;
+                    height: 350px;
+                    margin-bottom: 39px;
+                    color: $color-default;
+                    .card-image {
+                        margin-bottom: 14px;
+                        width: 100%;
+                        height: 150px;
+                        border: 1px solid $background-default;
+                    }
+
+                    .name {
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                    }
+
+                    .description {
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                    }
+
+                    .price-1 {
+                        margin-bottom: 6px;
+                        font-size: 12px;
+                    }
+
+                    .price-2 {
+                        margin-bottom: 7px;
+                        font-size: 16px;
+                    }
+
+                    .price-3 {
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                    }
+
+
+                    p {
+                        margin: 0;
+                    }
+
+                    button {
+                        color: $color-default;
+                        height: 30px;
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+                        border: 1px solid $background-default;
+                        border-radius: 4px;
+                        opacity: 1;}
+                }
+            }
+            .more-products {
+                display: flex;
+                justify-content: center;
+                .more-products-desktop {
+                    display: inline;
+                }
+                .more-products-tablet {
+                    display: none;
+                }
+                button {
+                    color: $color-default;
+                    top: 1651px;
+                    height: 39px;
+                    width: 260px;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: 1px solid $background-default;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+    .share-desktop {
+        display: inline;
+        color: $color-default;
+        .title-box {
+            padding-top: 128px;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 34px;
+            align-items: center;
+            p {margin: 0;}
+
+            .title {
+                text-align: center;
+                width: 22%;
+            }
+            
+            .line {
+                background: $background-default;
+                width: 39%;
+                height: 1px;
+            }
+        }
+        .subtitle {
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .form {
+            .inputs {
+                margin-top: 39px;
+                display: flex;
+                justify-content: center;
+
+                .input {
+                    margin: 0 20px;
+                    width: 35%;
+                }
+                label {
+                    margin-bottom: 7px;
+                    display: block;
+                    font-size: 12px;
+                }
+
+                input {
+                    width: 100%;
+                    height: 30px;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: 1px solid #707070;
+                }
+            }
+            .button {
+                margin: 50px 0 72px 0;
+                display: flex;
+                justify-content: center;
+
+                input {
+                    color: $color-default;
+                    width: 260px;
+                    height: 39px;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: 1px solid #707070;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+    
+    @media screen and (max-width: 600px) {
+        padding: 50px 14.6%;
+        .home-desktop {
+            display: none;
+        }
+        .selection {
+            .title-box-desktop {
+                display: none;
+            }
+            .card-box {
+                .cards {
+                    .card {
+                        width: 40%;
+                    }
+                }
+                .more-products {
+                    .more-products-desktop {
+                        display: none;
+                    }
+                    .more-products-tablet {
+                        display: inline;
+                    }
+                }
+            }
+        }
+        .share-desktop {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        padding: 0 15px 0 15px;
+        .home-desktop {
+            display: flex;
+            display: block;
+            margin-top: 30px;
+            .description-box {
+                width: 100%;
+            }
+            .form {
+                width: 100%;
+            }
+        }
+        .home-tablet {
+            display: none;
+        }
+        .selection {
+            .title-box-desktop {
+                display: flex;
+                .title {
+                    width: 55%;
+                }
+                .line {
+                    width: 25%;
+                }
+            }
+            .card-box {
+                .cards {
+                    .card {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: row;
+                        height: 129px;
+                        .card-image {
+                            margin: 0;
+                            width: 50%;
+                            height: 100%;
+                        }
+                        .card-body {
+                            width: 50%;
+                            margin-left: 23px;
+                            p.description {
+                                display: none;
+                            }
+                            button {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .more-products {
+                    .more-products-desktop {
+                        display: inline;
+                    }
+                    .more-products-tablet {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .share-desktop {
+            display: inline;
+            .title-box {
+                .title {
+                    width: 80%;
+                }
+                .line {
+                    width: 20%;
+                }
+            }
+            .subtitle {
+                text-align: center;
+                p {
+                    margin: 0;
+                }
+            }
+
+            .form {
+                .inputs {
+                    display: block;
+                    width: 100%;
+                    .input {
+                        margin: 0 0 20px 0;
+                        width: 100%;
+                    }
+                }
+                button {
+                    margin: 42px 0 85px 0;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    height: 290px;
+    background-color: #707070;
+    font-family: sans-serif;
+    .footer-box {
+        color: #FFFFFF;
+        height: 20%;
+        padding-top: 158px;
+        display: flex;
+        flex-direction: column;
+        p {
+            margin: 0;
+        }
+    }
+    @media screen and (max-width:600px)  {
+        height: 158px;
+        .footer-box {
+            padding-top: 79px;
+        }
+    }
+    @media screen and (max-width:420px)  {
+        height: 157px;
+        .footer-box {
+            padding-top: 71px;
+        }
+    }
+}
