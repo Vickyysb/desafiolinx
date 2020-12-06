@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head >
-    <?php include "./src/html/parts/header.html" ?>
     <link href="./src/scss/css/style.css" rel="stylesheet"/> 
 
 	<meta charset="utf-8"/>
@@ -12,11 +11,12 @@
 </head>
 
     <body onload="getProducts()">
+        <?php include "./src/html/parts/header.html" ?>
         <?php include "./src/html/content.html" ?>
 
 
+        <?php include "./src/html/parts/footer.html" ?>
     </body>
-    <?php include "./src/html/parts/footer.html" ?>
     <script type="text/javascript" src="./src/js/productController.js"></script>
     <script type="text/javascript" src="./src/js/validation.js"></script>
 </html>

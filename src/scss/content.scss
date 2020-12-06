@@ -1,5 +1,8 @@
-body{ margin: 0; width: 100%;}
-
+html, body {
+    margin: 0; 
+    width: 100%;
+    overflow-x:hidden 
+} 
 $color-default : #888888;
 $background-default : #707070;
 

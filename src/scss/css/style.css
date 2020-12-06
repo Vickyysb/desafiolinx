@@ -118,9 +118,10 @@
         padding-top: 71px;
         font-size: 12px; } }
 
-body {
+html, body {
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .bold {
   font-weight: bold; }
