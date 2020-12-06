@@ -4,10 +4,11 @@ $color-default : #888888;
 $background-default : #707070;
 
 .bold { font-weight: bold;}
-
+input[type=submit], button {cursor: pointer;}
 .container {
     padding: 20px 14.6%;
     font-family: sans-serif;
+
     .home-desktop {
         width: 100%;
         display: flex;
@@ -167,7 +168,8 @@ $background-default : #707070;
                         background: #FFFFFF 0% 0% no-repeat padding-box;
                         border: 1px solid $background-default;
                         border-radius: 4px;
-                        opacity: 1;}
+                        opacity: 1;
+                    }
                 }
             }
             .more-products {

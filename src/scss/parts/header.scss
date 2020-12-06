@@ -27,7 +27,7 @@
             justify-content: space-around;
             padding: 50px 81px;
 
-            button {
+            a {
                 color: #707070;
                 width: 160px;
                 height: 40px;
@@ -37,6 +37,10 @@
                 border-radius: 4px;
                 opacity: 1;
                 cursor: pointer;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         p {
@@ -87,9 +91,9 @@
                 display: flex;
                 flex-wrap: wrap;
                 padding: 56px 0px;
-                button {
+                a {
                     width: 43%;
-                    margin-bottom: 20px;
+                    margin-bottom: 19px;
                 }
             }
             p.title {

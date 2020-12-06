@@ -3,11 +3,11 @@ var actualPage = 1
 //inicializando array de produtos
 var products = []
 //url da api que vai ser chamada
-const URL_TO_FETCH = 'https://frontend-intern-challenge-api.iurykrieger.now.sh';
+const URL_TO_FETCH = 'https://frontend-intern-challenge-api.iurykrieger.now.sh'
 
 function getProducts(){
     //url da api que vai ser chamada passando a pagina que deverá ser chamada
-    const getProducts = `${URL_TO_FETCH}/products?page=${actualPage}`;
+    const getProducts = `${URL_TO_FETCH}/products?page=${actualPage}`
     //faz a requisição get para a api que foi definida acima
     fetch(getProducts, { 
         method: 'get'
@@ -39,7 +39,7 @@ function loadProducts(products){
   //caso receba produtos
   if(products){
     //cria uma referencia ao elemento cards
-    let cards = document.getElementsByClassName('cards');
+    let cards = document.getElementsByClassName('cards')
     
     //passa por todos os elementos
     products.forEach(el => {
@@ -58,11 +58,11 @@ function loadProducts(products){
           <p class="price-1">De: R$${el.oldPrice}</p>
           <p class="price-2 bold">Por: R$${el.price}</p>
           <p class="price-3">ou ${el.installments.count}x de R$${el.installments.value}</p>
-        <button>Comprar</button>
+        <button id="${el.id}">Comprar</button>
       </div>
       `
       //adiciona o elemento criado no elemento cards
-      cards[0].append(card);
+      cards[0].append(card)
     })
   }
 }
