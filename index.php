@@ -14,9 +14,9 @@
     <body onload="getProducts()">
         <?php include "./src/html/content.html" ?>
 
-        <?php include "./src/html/parts/footer.html" ?>
-    </body>
 
+    </body>
+    <?php include "./src/html/parts/footer.html" ?>
     <script type="text/javascript" src="./src/js/productController.js"></script>
     <script type="text/javascript" src="./src/js/validation.js"></script>
 </html>

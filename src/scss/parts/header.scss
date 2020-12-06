@@ -2,13 +2,26 @@
     width: 100%;
     text-align: center;
     height: 399px;
-    // background-color: #707070;
-    background: linear-gradient(3.6deg, #ffffff 24%, #707070 15%);
+    // background: linear-gradient(3.6deg, #ffffff 24%, #707070 15%);
     font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+    .header-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#707070, #707070);
+        transform: skewY(4deg);
+        transform-origin: bottom right;
+    }
     .header-box {
         padding: 0 14.6%;
         height: 100%;
-
+        position: relative;
         .buttons-desktop {
             display: flex;
             justify-content: space-around;
@@ -56,11 +69,17 @@
             p.title {
                 padding-top: 35px;
             }
+            p.description {
+                padding-top: 15px;
+            }
         }
     }
 
     @media screen and (max-width:420px)  {
         height: 398px;
+        .header-bg {
+            transform: skewY(16deg);
+        }
         .header-box {
             padding: 0 15px 0 15px;
             text-align: left;
